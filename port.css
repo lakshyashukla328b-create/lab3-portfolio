@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(15,23,42);
+    color: rgb(226,232,240);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.site-header{
+    background-color: rgb(15,23,42);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    font-size: 26px;
+    font-weight: bold;
+}
+.logo-span{
+    color: rgb(56,189,248);
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+}
+.nav-links a{
+    transition: color 0.3s;
+}
+.nav-links a:hover{
+    color: rgb(56,189,248);
+}
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;      
+    gap: 30px;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.hero-img {
+    display: flex;
+    justify-content: center;    
+}
+.hero-text{
+    animation: slideUp 1s;
+}
+.hero-text h1{
+    font-size: 45px;
+}
+.role{
+    font-size: 30px;
+}
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.hero-img img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgb(56,189,248);
+}
+.hero-img img:hover{
+    transform: scale(1.1);
+}
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: rgb(56,189,248);
+    color: rgb(15,23,42);
+    border: 2px solid rgb(56,189,248);
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.btn-outline{
+    background-color: transparent;
+    color: rgb(56,189,248);
+}
+.btn-outline:hover{
+    background-color: rgb(56,189,248);
+    color: rgb(15,23,42);
+}
+.section{
+    padding: 60px;
+    animation: fadeIn 1s;
+}
+.section-title{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.about-text{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(148,163,184);
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(250px,1fr);
+    gap: 25px;
+    margin: 0 auto;
+}
+.card{
+    background-color: rgb(30,41,59);
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+.card:hover{
+    background-color: transparent;
+    cursor: pointer;
+}
+.card h3{
+    color: rgb(56,189,248);
+}
+.card p{
+    color: rgb(148,163,184);
+}
+.level{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 3px 12px;
+    border-radius: 15px;
+    background-color: rgb(15,23,42);
+    color: rgb(167,139,250);
+    font-size: 14px;
+}
+.card-link{
+    display: inline-block;
+    margin-top: 15px;
+    color: rgb(167,139,250);
+    transition: 0.3s;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 550px;
+    margin: 0 auto;
+}
+.contact-form input,
+.contact-form textarea{
+    padding: 12px;
+    background-color: rgb(30,41,59);
+    color: white;
+    border: 2px solid rgb(30,41,59);
+    border-radius: 8px;
+    font-size: 16px;
+}
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline: none;
+    border-color: rgb(56,189,248);   
+}
+.contact-form.btn{
+    align-self: flex-start;
+    margin-top: 10px;
+}
+.site-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 5%;
+    background-color: rgb(10,16,32);
+    color: rgb(148,163,184);
+}
